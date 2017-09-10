@@ -6,7 +6,7 @@ Git Directory Layout:
   + bundle (contains) :
   	- bitcoinEx_package.json
 	  + views (directory) :
-	  	*.html (files)
+	  	*.ejs (files)
 
 	- bitcoinLib_package.json
 
