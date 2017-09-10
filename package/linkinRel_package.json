@@ -1,0 +1,16 @@
+{
+  "name": "linkinrel",
+  "version": "1.0.0",
+  "description": "Deep Linkedin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0",
+    "scrape-linkedin": "0.0.2",
+    "simplecrawler": "^1.1.5"
+  }
+}

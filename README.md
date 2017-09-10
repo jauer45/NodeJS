@@ -41,6 +41,7 @@ Prerequisits:
 	- Install latest version of GiT (require Git BASH for Windows)
 	- npm install mocha --global (mocha test env)
 	- Install socket.io; check http://socket.io
+	- Install blockchain.io
 	- an OSC supported application (I used pure-data) or hardware controller
 	- get and install an osc npm from git (I used osc-web but there are others) 
 		$ git clone git://github.com/automata/osc-web.git

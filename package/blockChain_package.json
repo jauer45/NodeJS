@@ -1,0 +1,7 @@
+{
+  "name": "blockChain",
+  "version": "0.0.1",
+  "dependencies": {
+    "blockchain.info": "^2.8.1"
+  }
+}
