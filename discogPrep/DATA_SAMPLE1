@@ -1,0 +1,37 @@
+{ username: 'gintask',
+  resource_url: 'https://api.discogs.com/users/gintask' }
+{ username: 'lafaceB',
+  resource_url: 'https://api.discogs.com/users/lafaceB' }
+{ username: 'Bat6660',
+  resource_url: 'https://api.discogs.com/users/Bat6660' }
+{ username: 'Thorbion',
+  resource_url: 'https://api.discogs.com/users/Thorbion' }
+{ username: 'alexandrisaa',
+  resource_url: 'https://api.discogs.com/users/alexandrisaa' }
+{ username: 'lollipop1',
+  resource_url: 'https://api.discogs.com/users/lollipop1' }
+{ username: 'LuckyLester',
+  resource_url: 'https://api.discogs.com/users/LuckyLester' }
+{ username: 'jorispet',
+  resource_url: 'https://api.discogs.com/users/jorispet' }
+{ username: 'dj4mat',
+  resource_url: 'https://api.discogs.com/users/dj4mat' }
+{ username: 'delalis',
+  resource_url: 'https://api.discogs.com/users/delalis' }
+{ username: 'dj4mat',
+  resource_url: 'https://api.discogs.com/users/dj4mat' }
+{ username: 'dentaku',
+  resource_url: 'https://api.discogs.com/users/dentaku' }
+{ username: 'djmaxbandera',
+  resource_url: 'https://api.discogs.com/users/djmaxbandera' }
+{ username: 'tmusic1',
+  resource_url: 'https://api.discogs.com/users/tmusic1' }
+{ username: 'imagine22',
+  resource_url: 'https://api.discogs.com/users/imagine22' }
+null
+{ username: 'wdouji',
+  resource_url: 'https://api.discogs.com/users/wdouji' }
+{ username: 'JOBPROD',
+  resource_url: 'https://api.discogs.com/users/JOBPROD' }
+{ username: 'sebastianj54',
+  resource_url: 'https://api.discogs.com/users/sebastianj54' }
