@@ -1,0 +1,17 @@
+NODEJS:
+{
+  bitcoinEx:
+  blockchain:
+
+  returns
+  {
+	n_market_usd,
+	exchange_rate
+  }
+
+
+  voxeljs:
+
+	setWorld(n_market_usd, exchange_rate)
+
+}
