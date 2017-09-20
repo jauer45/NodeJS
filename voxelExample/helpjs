@@ -1,0 +1,23 @@
+Init of a voxel.js script in a package
+
+$ mkdir voxelGame
+
+
+Preparing a new vogel "game":
+
+$ npm install browserify -g (--global)
+
+
+Preparing the gameName.js file:
+
+	var createGame = require('name-of-game')
+	var game = createGame()
+
+Setting the HTML:
+
+	...<script src="gameName.js"></script>
+
+
+Compile:
+
+$ browserify mygame.js -o buildgame.js
