@@ -4,7 +4,7 @@
 
 3) $ vi index.js
 
-	(User@User-PC /cygdrive/c/Joseph/NodeJS/voxel-tower)
+	(User@User-PC /cygdrive/c/.../NodeJS/voxel-tower)
 	$ vi index.js
 
 4) $ npm install --save-dev voxel-hello-world painterly-textures
