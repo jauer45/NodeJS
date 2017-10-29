@@ -2,6 +2,9 @@ var scribblr = require('scribbletune');
 
 // Need to insert 4 or more pattern options
 // Usage: $ node autocomposer.js -n '0:1' -o '3:4' -p 'x_x_' -a 'x___' -r 8
+// Usage: $ node autocomposer.js -n '0:1:8:9' -o '3:4:7:5' -p 'x_x-x_x-x_x-x_x_' -a 'x___x_x_x___x_x_' -r 64 -f testMore
+//
+
 
 // List Pattern Options
 var pattern = { 
@@ -18,25 +21,42 @@ var noteList = ['c','d','e','f','g','a','b',
 
 var argv = process.argv.slice(2);
 
-if (argv)
+if (argv.length > 1)
 {
         console.log(argv);
+	var ofile;
         var clipobj = {};
 
         for (i = 0; i < argv.length; i++)
         {
-                console.log( [i] + ": " + argv[i] + " " + argv[(i + 1)] );
-		var chain = flag_chk(argv[i], argv[(i + 1)]);
-		console.log('key: ' + chain[0] + ' val: ' + chain[1]);
-                clipobj[chain[0]] = chain[1];
+		// Special case for file output (for now)
+		if(argv[i] == '-f')
+		{
+			ofile = argv[(i + 1)]; 	
+		}
+		else
+		  {
+                    console.log( [i] + ": " + argv[i] + " " + argv[(i + 1)] );
+		    var chain = flag_chk(argv[i], argv[(i + 1)]);
+		    console.log('key: ' + chain[0] + ' val: ' + chain[1]);
+                    clipobj[chain[0]] = chain[1];
+		}
 		i++;
         }
 
 	console.log('Obj: ' + clipobj);
 	var audioObj = processObj(clipobj);
 
+	var fileout = ofile + '.mid';
+	console.log('FileOUT: ' + fileout);
+
 	var composition = scribblr.clip(audioObj);
-        scribblr.midi(composition, 'test_autocomp.mid');
+        scribblr.midi(composition, fileout);
+}
+else 
+ {
+	help_list();
+
 }
 
 
@@ -130,6 +150,16 @@ function processObj(o)
 	return (sclip);
 }
 
+
+function help_list()
+{
+	console.log('Usage : $ node autocomposer.js -l 2 -n \'0:4\' -o \'3:4\' -p \'_x_x\' -a \'_x__\' -r 4');
+
+	listNotes(); // List Note options
+
+}
+
+
 function flag_chk(f, v)
 {
 
@@ -165,10 +195,33 @@ function flag_chk(f, v)
                         return ['sizzle', sizzle];
                 default:
                         console.log('Usage : $ node autocomposer.js -l 2 -n \'0:4\' -o \'3:4\' -p \'_x_x\' -a \'_x__\' -r 4');
-                        // list_patternSet(); // same for both pattern and accentMap
+                        listNotes(); // List Note options
+			break;
         }
 
 }
+
+
+function listNotes()
+{
+	console.log('Notes to choose from -n (0-24:...:0-24) : ');
+	console.log('');
+	for(i = 0; i < noteList.length; i++)
+	{
+		console.log([i] + ' == ' + noteList[i]);
+	}
+	console.log('');
+	console.log('pattern and accentMap symbols than can be used: ');
+	console.log( JSON.parse(JSON.stringify(pattern)) );
+}
+
+
+function set_fileout(v)
+{
+	console.log('fileout: ' + v);
+	return(v);
+}
+
 
 function set_octave(v)
 {
