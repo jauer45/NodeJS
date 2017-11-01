@@ -3,6 +3,7 @@ var scribblr = require('scribbletune');
 // Need to insert 4 or more pattern options
 // Usage: $ node autocomposer.js -n '0:1' -o '3:4' -p 'x_x_' -a 'x___' -r 8
 // Usage: $ node autocomposer.js -n '0:1:8:9' -o '3:4:7:5' -p 'x_x-x_x-x_x-x_x_' -a 'x___x_x_x___x_x_' -r 64 -f testMore
+// Usage: $ node autocomposer.js -n '0:1:8:9' -o '3:4:7:5' -p 'x_x-x_x-x_x-x_x_' -a 'x___x_x_x___x_x_' -r 64 -s 'true' -f testMore
 //
 
 
@@ -144,6 +145,20 @@ function processObj(o)
 		sclip['accentMap'] = o['accentMap'];
 	}
 
+	if(o['arpegiate']) 
+	{
+		var arset = {};
+		var a = o['arpegiate'].split(':');
+
+		// arpegiate : {distance, steps}
+		arset['distance'] = a[0];
+		arset['steps'] = a[1];
+		
+		sclip['arpegiate'] = arset; 
+	}
+
+	if(o['sizzle']) { sclip['sizzle'] = o['sizzle']; }
+
 
 	//o['notes'][n] = o['notes'][n] + o['octave'][n];
 	// SET scribblr.clip({...}) HERE
@@ -181,6 +196,10 @@ function flag_chk(f, v)
                         console.log('pattern accentMap: ' + v);
                         var accentMap = set_accentMap(v);
                         return['accentMap', accentMap];
+		case '-e':
+			console.log('pattern arpegiate: ' + v);
+                        var arpegiate = set_arpegiate(v);
+                        return['arpegiate', arpegiate];
                 case '-r':
                         console.log('pattern repeat: ' + v);
                         var prepeat = set_pattern_repeat(v);
@@ -270,6 +289,12 @@ function set_noteLength(v)
 {
         console.log("noteLength: " + v);
         return (v);
+}
+
+function set_arpegiate(v)
+{
+	console.log("arpegiate: " + v);
+	return (v);	
 }
 
 function set_sizzle(v)
