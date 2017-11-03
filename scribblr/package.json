@@ -9,6 +9,7 @@
   "author": "Joseph Auer",
   "license": "ISC",
   "dependencies": {
+    "crypto-js": "^3.1.9-1",
     "scribbletune": "^0.11.0"
   }
 }
