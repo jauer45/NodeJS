@@ -1,3 +1,5 @@
+// use 'strict';
+
 var scribblr = require('scribbletune');
 
 // Need to insert 4 or more pattern options
@@ -20,15 +22,27 @@ var noteList = ['c','d','e','f','g','a','b',
                 'Cm#','Dm#','Em','Fm#','Gm#','Am#','Bm'];
 
 
-var argv = process.argv.slice(2);
+// var argv = process.argv.slice(2);
 
-if (argv.length > 1)
+class Composer
 {
+
+  // if (argv.length > 1)
+  constructor() {
+  }
+
+  trackstoset()
+  { 
+	return (3);
+  }
+
+  scribblr_run(argv)
+  {
         console.log(argv);
 	var ofile;
         var clipobj = {};
 
-        for (i = 0; i < argv.length; i++)
+        for (var i = 0; i < argv.length; i++)
         {
 		// Special case for file output (for now)
 		if(argv[i] == '-f')
@@ -38,7 +52,7 @@ if (argv.length > 1)
 		else
 		  {
                     console.log( [i] + ": " + argv[i] + " " + argv[(i + 1)] );
-		    var chain = flag_chk(argv[i], argv[(i + 1)]);
+		    var chain = this.flag_chk(argv[i], argv[(i + 1)]);
 		    console.log('key: ' + chain[0] + ' val: ' + chain[1]);
                     clipobj[chain[0]] = chain[1];
 		}
@@ -46,19 +60,21 @@ if (argv.length > 1)
         }
 
 	console.log('Obj: ' + clipobj);
-	var audioObj = processObj(clipobj);
+	var audioObj = this.processObj(clipobj);
 
 	var fileout = ofile + '.mid';
 	console.log('FileOUT: ' + fileout);
 
 	var composition = scribblr.clip(audioObj);
         scribblr.midi(composition, fileout);
-}
-else 
- {
+  }
+  // else 
+  
+  list_help()
+  {
 	help_list();
 
-}
+  }
 
 
 
@@ -96,8 +112,8 @@ else
 // function accentMapAdd ('-a', refs patternList)
 
 
-function processObj(o)
-{
+  processObj(o)
+  {
 	var sclip = {};
 
 	console.log('octave: ' + o['octave'].length);
@@ -108,7 +124,7 @@ function processObj(o)
 	// Set Notes properly 
 	console.log('notes n: ' + n);
 	var finalnoteSet = [];
-	for(i = 0; i < n.length; i++)
+	for(var i = 0; i < n.length; i++)
 	{
 		console.log('finalNoteset: ' +  noteList[n[i]] + m[i] );
 		var fullnote = noteList[n[i]] + m[i];
@@ -130,7 +146,7 @@ function processObj(o)
 		// Sadly this seems not work now: finalPatternSet = o['pattern'] + '.repeat(' + o['repeat'] + ')';
 		// So make our own repeat 8 times:
 
-		for(i = 0; i < o['repeat']; i++)
+		for(var i = 0; i < o['repeat']; i++)
 		{
 			finalPatternSet += o['pattern'];
 			finalaccSet += o['accentMap']; 
@@ -158,118 +174,130 @@ function processObj(o)
 	}
 
 	if(o['sizzle']) { sclip['sizzle'] = o['sizzle']; }
+	if(o['btcounter']) { sclip['btcounter'] = o['btcounter']; }
 
 
 	//o['notes'][n] = o['notes'][n] + o['octave'][n];
 	// SET scribblr.clip({...}) HERE
 	return (sclip);
-}
+  }
 
 
-function help_list()
-{
+  help_list()
+  {
 	console.log('Usage : $ node autocomposer.js -l 2 -n \'0:4\' -o \'3:4\' -p \'_x_x\' -a \'_x__\' -r 4');
 
-	listNotes(); // List Note options
+	this.listNotes(); // List Note options
 
-}
+	return;
+  }
 
 
-function flag_chk(f, v)
-{
+  flag_chk(f, v)
+  {
 
         switch (f)
         {
                 case '-o':
                         console.log('octave: ' + v);
-                        var oct = set_octave(v);
+                        var oct = this.set_octave(v);
                         return ['octave', oct];
                 case '-l':
                         console.log('noteLength : ' + v);
-                        var noteLength = set_noteLength(v);
+                        var noteLength = this.set_noteLength(v);
                         return ['noteLength', noteLength];
                 case '-p':
                         console.log('pattern: ' + v);
-                        var pattern = set_pattern(v);
+                        var pattern = this.set_pattern(v);
                         return ['pattern', pattern];
                 case '-a':
                         console.log('pattern accentMap: ' + v);
-                        var accentMap = set_accentMap(v);
+                        var accentMap = this.set_accentMap(v);
                         return['accentMap', accentMap];
 		case '-e':
 			console.log('pattern arpegiate: ' + v);
-                        var arpegiate = set_arpegiate(v);
+                        var arpegiate = this.set_arpegiate(v);
                         return['arpegiate', arpegiate];
                 case '-r':
                         console.log('pattern repeat: ' + v);
-                        var prepeat = set_pattern_repeat(v);
+                        var prepeat = this.set_pattern_repeat(v);
                         return['repeat', prepeat];
                 case '-n':
                         console.log('note: ' + v);
-                        var noteSet = set_note(v);
+                        var noteSet = this.set_note(v);
                         return ['notes', noteSet];
                 case '-s':
                         console.log('sizzle ' + v);
-                        var sizzle = set_sizzle(v);
+                        var sizzle = this.set_sizzle(v);
                         return ['sizzle', sizzle];
+		case '-b':
+			console.log("btcounter " + v);
+			var btcounter = this.set_btcounter(v);
+			return['btcounter', btcounter];
                 default:
                         console.log('Usage : $ node autocomposer.js -l 2 -n \'0:4\' -o \'3:4\' -p \'_x_x\' -a \'_x__\' -r 4');
-                        listNotes(); // List Note options
+                        this.listNotes(); // List Note options
 			break;
         }
 
-}
+  }
 
 
-function listNotes()
-{
+  listNotes()
+  {
 	console.log('Notes to choose from -n (0-24:...:0-24) : ');
 	console.log('');
-	for(i = 0; i < noteList.length; i++)
+	for(var i = 0; i < noteList.length; i++)
 	{
 		console.log([i] + ' == ' + noteList[i]);
 	}
 	console.log('');
 	console.log('pattern and accentMap symbols than can be used: ');
 	console.log( JSON.parse(JSON.stringify(pattern)) );
-}
+  }
+
+  set_btcounter(v)
+  {
+	console.log('btcounter: ' + v);
+        return(v);
+  }
 
 
-function set_fileout(v)
-{
+  set_fileout(v)
+  {
 	console.log('fileout: ' + v);
 	return(v);
-}
+  }
 
 
-function set_octave(v)
-{
+  set_octave(v)
+  {
         console.log('octave: ' + v);
         return(v);
-}
+  }
 
 
-function set_pattern(v)
-{
+  set_pattern(v)
+  {
         console.log('pattern: ' + v);
         return (v);
-}
+  }
 
-function set_pattern_repeat(v)
-{
+  set_pattern_repeat(v)
+  {
         console.log('.repeat: ' + v);
         return(v);
-}
+  }
 
-function set_accentMap(v)
-{
+  set_accentMap(v)
+  {
         console.log("accentMap: " + v);
         return (v);
-}
+  }
 
 
-function set_note(v)
-{
+  set_note(v)
+  {
 	console.log("notes: " + v);
         return (v);
 	
@@ -283,23 +311,29 @@ function set_note(v)
         //}
         // console.log(noteSet);
         // return (noteSet);
-}
+  }
 
-function set_noteLength(v)
-{
+  set_noteLength(v)
+  {
         console.log("noteLength: " + v);
         return (v);
-}
+  }
 
-function set_arpegiate(v)
-{
+  set_arpegiate(v)
+  {
 	console.log("arpegiate: " + v);
 	return (v);	
-}
+  }
 
-function set_sizzle(v)
-{
+  set_sizzle(v)
+  {
 	console.log("sizzle: " + v);
         return (v);
+  }
+
 }
 
+
+module.exports = {
+   Composer: Composer
+}

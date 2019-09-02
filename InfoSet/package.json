@@ -1,0 +1,20 @@
+{
+  "name": "infoset",
+  "version": "1.0.0",
+  "description": "prototype for information parsing and extracting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Auer",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "htmlparser": "^1.7.7",
+    "puppeteer": "^1.17.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "rss-feed-emitter": "^2.0.1",
+    "rss-parser": "^3.7.1"
+  }
+}
