@@ -1,0 +1,94 @@
+{
+  "China":
+  {
+     "Post Colonial":
+     { 
+	"Period":[{"Start":1949}, {"End":1999}],
+	"Research_Period":[{"Start":1972}, {"End":1999}],
+
+	"Beijing":
+	{
+	   "artist":
+	   {
+		"Tang Dynasty":["0", "https://www.discogs.com/artist/3389203-%E5%94%90%E6%9C%9D?anv=Tang+Dynasty"],
+		 "左小祖咒 (Zuoxiao Zuzhou)":["0", "https://www.discogs.com/artist/3130505-%E5%B7%A6%E5%B0%8F%E7%A5%96%E5%92%92"]
+	   },
+
+	   "label":
+	   { 
+		"Shanshui":["0", "https://www.discogs.com/label/36769-Shanshui"],
+		"中国音乐家音像出版社":["0", "https://www.discogs.com/label/777412-%E4%B8%AD%E5%9B%BD%E9%9F%B3%E4%B9%90%E5%AE%B6%E9%9F%B3%E5%83%8F%E5%87%BA%E7%89%88%E7%A4%BE"]
+	   },
+
+	   "organisation_space":
+	   {
+		"Test":["0", "test"],
+		"Beijing East Village":["0", "https://en.wikipedia.org/wiki/Beijing_East_Village"],
+		"Yuanmingyuan 圆明园 Artists Village":["0", "https://web.archive.org/web/20111228213811/http://www.artspeakchina.org/mediawiki/index.php/Yuanmingyuan"]
+	   },
+
+	   "event":{},
+
+	   "promoter":{},
+
+	   "academia":{}
+
+	}
+     },
+
+     "Millennial":
+     {
+	"Date":[{"Start":2000}, {"End":2019}],	
+
+	"Beijing":
+	{
+	   "artist":
+           {
+		"颜峻, (Yan Jun)":["Yan Jun, musician and poet. born in Lanzhou in 1973. based in Beijing. 
+involved in: improvised music, electronics, field recording, body movements, voice... 
+member of: FEN, Tea Rockers Quintet, Impro Committee.", "https://www.discogs.com/artist/632706-Yan-Jun"],
+		"王凡, (Wang Fan)":["Electronica and ambient artist from Beijing, China.", "https://www.discogs.com/artist/672555-Wang-Fan"],
+		"张荐 (Zhang Jian)":["0", "https://www.discogs.com/artist/632707-Zhang-Jian"],
+		"Howie Lee":["0","0"],
+		"33EMYBW":["0","0"],
+		"GOOOOOSE":["0","0"],
+		"Jason Hou":["0", "0"],
+		"Hyph11e":["0", "0"],
+		"Zhiqi":["0", "https://www.residentadvisor.net/dj/zhiqi"],
+		"Hu Yang":["0", "https://www.residentadvisor.net/dj/huyang"],
+		"iLoop":["Luo Hao. Profile: The Chinese artist iLoop started to play electronic music in 2002. He first played something between post rock and digital hardcore and later breakcore.", "https://www.discogs.com/artist/419970-iLoop"]
+           },
+
+	   "group":
+	   {
+		"Brain Failure":["Beijing, China punk band.", "https://www.discogs.com/artist/317147-Brain-Failure"],
+		"FM3":["Founded by Christiaan Virant in Beijing in 1999, FM3 (FM三)pioneered avant-garde electronic music in China. Virant works closely with computer musician Zhang Jian, distilling the FM3 sound from traditional Chinese instruments and home-made electronic loop boxes called Buddha machines", "https://www.discogs.com/artist/143217-Fm3"],
+		"苍蝇":["Cāngyíng, or The Fly, is an experimental / punk Chinese band from Beijing.", "https://www.discogs.com/artist/4907008-%E8%8B%8D%E8%9D%87"],
+		"Hedgehog":["D-22 Stalwarts.", "https://en.wikipedia.org/wiki/Hedgehog_(band)"]
+	   },
+
+           "label":
+           {
+		"Genjing Records (根茎唱片)":["'Genjing Records is a Beijing-based record label that specializes in releasing vinyl of Chinese artists. We aim to promote vinyl and DIY culture in China while creating links between the Chinese scene and DIY scenes around the globe. The bands retain all rights for their works and we aim to serve more as a promotional resource in support of the Chinese DIY community, spreading information about Chinese bands abroad while raising awareness of international DIY scenes within China. Our products are available through mail order and our global partner labels'", "http://genjingrecords.com/about"],
+		"Cold Woods Productions":["Chinese Black Metal Doomcore Ambient label. Active from 2010. 'Chinese name: 冷寂森林'", "https://www.discogs.com/label/549296-Cold-Woods-Productions"],
+		"Last Groan Productions":["Chinese Dark Ambient Noise label active from 2006-2007", "https://www.discogs.com/label/1064954-Last-Groan-Productions"]
+           },
+
+           "organisation_space":
+           {
+		"Modern Sky Lab":["0", "0"]
+           },
+
+           "event":{},
+
+           "promoter":
+	   {
+		"Pangbianr":["Pangbianr is an independent art/music/film production and distribution platform based in Beijing, China. We organize interdisciplinary cultural events in Beijing, produce original recordings and videos, and distribute work by Chinese artists, musicians and filmmakers internationally.", "http://pangbianr.com/ https://www.facebook.com/pbrbj", "https://www.linkedin.com/company/pangbianr/"],
+		"RADII (Radii)":["'RADII was founded by Brian A. Wong, Vice President of Alibaba. We operate with editorial independence.'", "https://radiichina.com/about/"]
+	   },
+
+           "academia":{}
+	}
+     } 
+  }
+}

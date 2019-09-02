@@ -1,0 +1,16 @@
+{
+  "discogs":
+  [
+	{
+	"about":"Discogs is the worlds foremost Database, Marketplace, and Community for music. 
+The user-built Database boasts a catalog of more than 11 million releases and 6.1 million artists making it the most extensive physical music Database in the world. While Discogs is widely regarded as a place for listing vinyl, CDs, cassettes and other physical media, the site covers digital-only music too. 
+It seems unlikely Discogs will ever overcome an insurmountable backlog of unlisted tracks from the digital-only sphere, though. In the 9 months it took Discogs to add 1 million records, for instance, Spotify may have added as many as 5 million songs to their database. Spotify founder Daniel Ek stated that the service is adding some 20,000 new songs to its library every day, and what took Discogs 9 months to add, a second-tier streaming service like Napster adds in six weeks.
+	"},
+	{"stats":[
+		"20,000 VISITORS PURCHASE VINYL VIA DISCOGS EACH DAY",
+		"47M ITEMS LISTED FOR SALE IN THE DISCOGS MARKETPLACE",
+		"11M RELEASES IN THE DISCOGS DATABASE",
+		"10M VINYL RECORDS SOLD IN 2018"
+         ]}
+  ]
+}

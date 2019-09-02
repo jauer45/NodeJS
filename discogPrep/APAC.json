@@ -1,0 +1,17 @@
+{
+  "Asia":
+  [
+    {"South_Asia":["Afghanistan","Bangladesh","Bhutan","India","Maldives","Nepal","Pakistan","Sri Lanka"]},
+    {"North_Asia":["Russia"]},
+    {"Southeast_Asia":["Brunei","Cambodia","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Timor-Leste","Vietnam"]},
+    {"East_Asia":["China","Hong Kong","Macau","Japan","Mongolia","North Korea","South Korea","Taiwan"]},
+    {"Central_Asia":["Kazakhstan","Kyrgystan","Tajikistan","Turkmenistan","Uzbekistan"]}
+  ],
+  "Oceania":
+  [
+    {"Australasia":[{"Australia":["Christmas Island","Cocos (Keeling) Islands","Heard Island and McDonald Islands","Norfolk Island"]}, "New Zealand"]},
+    {"Melanesia":["Fiji","New Caledonia","Papua New Guinea","Solomon Islands","Vanuatu"]},
+    {"Micronesia":[{"US":["Guam","Northern Mariana Islands"]},"Kiribati","Marshall Islands","Micronesia","Nauru","Palau"]},
+    {"Polynesia":[{"US":"American Samoa"},{"New Zealand":["Cook Islands","Niue","Tokelau"]},{"France":["French Polynesia","Wallis and Futuna"]},{"UK":["Pitcairn Islands"]},"Samoa","Tonga","Tuvalu"]}
+  ]
+}

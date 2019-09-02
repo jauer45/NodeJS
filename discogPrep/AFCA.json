@@ -1,0 +1,10 @@
+{
+  "Africa":
+  [
+    {"Eastern_Africa":["Burundi","Comoros","Djibouti","Eritrea","Ethiopia","Kenya","Madagascar","Malawi","Mauritius","Mayotte","Mozambique","Réunion","Rwanda","Seychelles","Somalia","South Sudan","Tanzania","Uganda","Zambia","Zimbabwe"]},
+    {"Middle_Africa":["Angola","Cameroon","Central African Repulic","Chad","Democratic Repulic of the Congo","Equatorial Guinea","Gabon","Republic of the Congo","São Tomé and Príncipe"]},
+    {"Northern_Africa":["Algeria","Egypt","Libya","Morocco","Sudan","Tunisia","Western Sahara"]},
+    {"Southern_Africa":["Botswana","Eswatini","Lesotho","Namibia","South Africa"]},
+    {"Western_Africa":["Benin","Burkina Faso","Cabo Verde","Côte d'Ivoire","Gambia","Ghana","Guinea","Guinea-Bissau","Liberia","Mali","Mauritania","Niger","Nigeria","Saint Helena, Ascension and Tristan da Cunha","Senegal","Sierra Leone","Togo"]}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "Europe":
+  [
+    {"Eastern_Europe":["Belarus","Bulgaria","Czech Republic","Hungary","Moldova","Poland","Romania","Russia","Slovakia","Ukraine"]},
+    {"Northern_Europe":["Åland Islands","Denmark","Estonia","Faroe Islands","Finland","Guernsey","Iceland","Ireland","Isle of Man","Jersey","Latvia","Lithuania","Norway","Sark","Svalbard and Jan Mayen","Sweden","UK"]},
+    {"Southern_Europe":["Albania","Andorra","Bosnia and Herzegovina","Croatia","Gibraltar","Greece","Italy","Malta","Montenegro","North Macedonia","Portugal","San Marino","Serbia","Slovenia","Spain","Vatican City"]},
+    {"Western_Europe":["Austria","Belgium","France","Germany","Liechtenstein","Luxembourg","Monaco","Netherlands","Switzerland"]}
+  ]
+}
