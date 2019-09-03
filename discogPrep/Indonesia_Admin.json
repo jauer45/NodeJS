@@ -1,0 +1,50 @@
+{
+  "Indonesia":
+  {
+     "Region":
+     {
+	"Aceh":[],
+	"Bali":[],
+	"Bangka Belitung Islands":[],
+	"Banten":[],
+	"Bengkulu":[],
+	"Central Java":
+	{
+		"Regency":["Banjarnegara","Banyumas","Batang","Blora","Boyolali","Brebes","Cilacap","Demak","Grobogan","Jepara","Karanganyar","Kebumen","Kendal","Klaten","Kudus","Magelang","Pati","Pekalongan","Pemalang","Purbalingga","Purworejo","Rembang","Semarang","Sragen","Sukoharjo","Tegal","Temanggung","Wonogiri","Wonosobo"],
+		"City":["Magelang","Pekalongan","Salatiga","Semarang","Surakarta","Tegal"]
+	},
+	"Central Kalimantan":[],
+	"Central Sulawesi":[],
+	"East Java":[],
+	"East Kalimantan":[],
+	"East Nusa Tenggara":[],
+	"Gorontalo":[],
+	"Jambi":[],
+	"Jakarta":[],
+	"Lampung":[],
+        "Maluku":[],
+        "North Kalimantan":[],
+        "North Maluku":[],
+        "North Sulawesi":[],
+        "North Sumatra":[],
+        "Papua":[],
+	"Riau":[],
+	"Riau Islands":[],
+	"Southeast Sulawesi":[],
+	"South Kalimantan":[],
+	"South Sulawesi":[],
+	"South Sumatra":[],
+	"West Java":{
+		"Regency":["Bandung","Bekasi","Bogor","Ciamis","Cianjur","Cirebon","Garut","Indramayu","Karawang","Kuningan","Majalengka","Pangandaran","Purwakarta","Subang","Sukabumi","Sumedang","Tasikmalaya","West Bandung"],
+		"Music":["Angklung","Calung","Celempungan","Dedung","Funkot","Gambang kromong","Gamelan Dedung","Kacapi Suling","Pantun Sunda","Pop Sunda","Rebab","Suling","Tembang Sunda"],
+		"City":["Bandung","Banjar","Bekasi","Bogor","Cimahi","Cirebon","Depok","Sukabumi","Tasikmalaya"]
+	},
+	"West Kalimantan":[],
+	"West Nusa Tenggara":[],
+	"West Papua":[],
+	"West Sulawesi":[],
+	"West Sumatra":[],
+	"Yogyakarta":[]
+     }
+  }
+}

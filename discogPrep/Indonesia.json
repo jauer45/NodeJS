@@ -1,0 +1,96 @@
+{
+  "Indonesia":
+  {
+     "Music Type":["Dedong", "Dungdat", "Gamelan", "Krongcong"],
+     "Perormance Community":["Jiapong"],
+     "Music Hybridisation":["Disko Indonesia", "Funkot", "Java Bass", "Ska-Dungdat"],
+     "Cultural Division":["Anak-Jaksel", "Punks"],
+
+
+     "Post Colonial":
+     { 
+	"Period":[{"Start":1945}, {"End":1999}],
+	"Research Period":[{"Start":1978}, {"End":1999}],
+
+	"Jakarta":
+	{
+	   "artist":
+	   {
+		"Melissa Saila":["0", "0"]
+	   },
+
+	   "group":
+	   {
+	   },
+
+	   "label":
+	   { 
+	   },
+
+	   "organisation_space":
+	   {
+	   },
+
+	   "event":{},
+
+	   "promoter":{},
+
+	   "academia":{}
+
+	},
+
+	"Solo":{
+	},
+
+	"Suribaya":{
+	},
+
+	"Yogyakarta":{
+	}
+
+     },
+
+     "Millennial":
+     {
+	"Period":[{"Start":2000}, {"End":2019}],
+	"Period Research":[{"Start":2000}, {"End":2019}],
+
+	"Jakarta":
+	{
+	   "artist":
+           {
+		"Discomafia":["0", "0"]
+           },
+
+	   "group":
+	   {
+	   },
+
+           "label":
+           {
+		"LaoBan":["0","0"]
+           },
+
+           "organisation_space":
+           {
+           },
+
+           "event":
+	   {
+	   },
+
+	   "media":
+	   {
+	   }, 
+
+           "promoter":
+	   {
+	   },
+
+           "academia":
+	   {
+	   }
+	}
+     } 
+  }
+}
