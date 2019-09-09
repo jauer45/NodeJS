@@ -4,8 +4,8 @@ var Discogs = require('disconnect').Client;
 // than I thought despite the scale of the DB; a bit counter-intuitive and
 // a bit of a downer...
 //
-var START = 952000; // 950200;
-var END =   952100; // 950300;
+var START = 952100; // 950200;
+var END =   952200; // 950300;
 
 // 100 - 127100  (1996 - 2003; No entries for ROK, 10 for JP; None for other Asian countries)
 // 137000 - "100 (") -- around here 12 for Japan
