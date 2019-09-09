@@ -9,9 +9,11 @@
 #
 
 discogs=`node json_parse_DSCGS.js`;
-echo "Source: Discogs (Personalised API Snapshot) \n";
+printf "\n"
+printf "Source: Discogs (Personalised API Snapshot) ";
+printf "\n\n"
 echo ${discogs}
-echo "\n\n" 
+printf "\n\n" 
 
 
 ret=`cat ALL_FLATDB | wc -l`
@@ -41,13 +43,21 @@ echo 'Hip-Hop: ' ${hret} ' % [' ${hhpr} ']';
 
 printf "\n"
 printf "REGION: ASIA \n"
-
+assum=0;
+afsum=0;
+eusum=0;
+amsum=0;
+fmsum=0;
 
 for i in `node json_parse_APAC.js | sed -e "s/ /\_/g"` ; 
 do  
 	x=`echo ${i} | sed "s/_/ /g"`;
 	totalr=`grep "::${x}::" ALL_FLATDB | wc -l`;
-	echo ${x}  ' Total: ' ${totalr} ;
+	tper=$(awk "BEGIN {print ($totalr / $ret) * 100}")
+	let "assum+=$totalr";
+
+	# echo 'Sum counter: ' ${assum}
+	echo ${x}  ' Total / % [of World output] : ' ${totalr} ' % [' ${tper} ']';
 
 	if [[ ${totalr} > 0 ]]; then
 		 # echo 'GREATER THAN ZERO' ${totalr};
@@ -83,6 +93,7 @@ do
 
 	printf "\n";
 done;
+echo 'TOTAL SUM FOR ASIA: ' ${assum} ;
 
 
 printf "\n"
@@ -93,6 +104,10 @@ do
         x=`echo ${i} | sed "s/_/ /g"`;
         totalr=`grep "::${x}::" ALL_FLATDB | wc -l`;
         echo ${x}  ' Total: ' ${totalr} ;
+	tper=$(awk "BEGIN {print ($totalr / $ret) * 100}")
+	let "afsum+=$totalr";
+
+	echo ${x}  ' Total / % [of World output] : ' ${totalr} ' % [' ${tper} ']';
 
         if [[ ${totalr} > 0 ]]; then
                  # echo 'GREATER THAN ZERO' ${totalr};
@@ -128,6 +143,7 @@ do
 	
 	printf "\n";
 done;
+echo 'TOTAL SUM FOR AFRICA: ' ${afsum} ;
 
 printf "\n"
 printf "REGION: EUROPE \n"
@@ -137,6 +153,10 @@ do
         x=`echo ${i} | sed "s/_/ /g"`;
         totalr=`grep "::${x}::" ALL_FLATDB | wc -l`;
         echo ${x}  ' Total: ' ${totalr} ;
+	tper=$(awk "BEGIN {print ($totalr / $ret) * 100}")
+	let "eusum+=$totalr";
+
+	echo ${x}  ' Total / % [of World output] : ' ${totalr} ' % [' ${tper} ']';
 
         if [[ ${totalr} > 0 ]]; then
                  # echo 'GREATER THAN ZERO' ${totalr};
@@ -172,6 +192,7 @@ do
 
 	printf "\n";
 done;
+echo 'TOTAL SUM FOR EUROPE: ' ${eusum} ;
 
 
 printf "\n"
@@ -182,6 +203,10 @@ do
         x=`echo ${i} | sed "s/_/ /g"`;
         totalr=`grep "::${x}::" ALL_FLATDB | wc -l`;
         echo ${x}  ' Total: ' ${totalr} ;
+	tper=$(awk "BEGIN {print ($totalr / $ret) * 100}")
+	let "amsum+=$totalr";
+
+	 echo ${x}  ' Total / % [of World output] : ' ${totalr} ' % [' ${tper} ']';
 
         if [[ ${totalr} > 0 ]]; then
                  # echo 'GREATER THAN ZERO' ${totalr};
@@ -217,8 +242,55 @@ do
 
 	printf "\n";
 done;
+echo 'TOTAL SUM FOR AMERICAS: ' ${amsum} ;
 
 
 printf "\n"
 printf "REGION: FORMER SOVEREIGN STATES \n"
+
+for i in `node json_parse_FRMRC.js | sed -e "s/ /\_/g"` ;
+do
+        x=`echo ${i} | sed "s/_/ /g"`;
+        totalr=`grep "::${x}::" ALL_FLATDB | wc -l`;
+        echo ${x}  ' Total: ' ${totalr} ;
+        tper=$(awk "BEGIN {print ($totalr / $ret) * 100}")
+        let "fmsum+=$totalr";
+
+         echo ${x}  ' Total / % [of World output] : ' ${totalr} ' % [' ${tper} ']';
+
+        if [[ ${totalr} > 0 ]]; then
+                 # echo 'GREATER THAN ZERO' ${totalr};
+
+        printf "Breakdown of Genre submition weight for ${x} :\n" ;
+        p=`grep "::${x}::Pop" ALL_FLATDB | wc -l`;
+        pper=$(awk "BEGIN {print ($p / $totalr) * 100}");
+
+        r=`grep "::${x}::Rock" ALL_FLATDB | wc -l`;
+        rper=$(awk "BEGIN {print ($r / $totalr) * 100}");
+
+        e=`grep "::${x}::Electronic" ALL_FLATDB | wc -l`;
+        eper=$(awk "BEGIN {print ($e / $totalr) * 100}");
+        top_cgs=` cat ALL_FLATDB | grep "::${x}::Electronic" | awk '{FS="::"} {print $6 " " $7}' | sort -rn | uniq -c | sort -rn | head -5`
+
+        fs=`grep "::${x}::Funk" ALL_FLATDB | wc -l`;
+        fsper=$(awk "BEGIN {print ($fs / $totalr) * 100}");
+
+        fw=`grep "::${x}::Folk" ALL_FLATDB | wc -l`;
+        fwper=$(awk "BEGIN {print ($fw / $totalr) * 100}");
+
+        sc=`grep "::${x}::Stage" ALL_FLATDB | wc -l`;
+        scper=$(awk "BEGIN {print ($sc / $totalr) * 100}");
+
+        echo ' Pop: ' ${p} ' % [' ${pper} ']' ;
+        echo ' Rock: ' ${r} ' % [' ${rper} ']' ;
+	echo ' Electronic: ' ${e} ' % [' ${eper} ']';
+        printf "    Electronic: \n ${top_cgs} \n";
+        echo ' Funk / Soul: ' ${fs} ' % [' ${fsper} ']';
+        echo ' Folk, World & Country: ' ${fw} ' % [' ${fwper} ']';
+        echo ' Stage & Screen: ' ${sc} ' % [' ${scper} ']' ;
+        fi;
+
+        printf "\n";
+done;
+echo 'TOTAL SUM FOR FORMER SOVEREIGN STATES ("Post-War") : ' ${fmsum} ;
 

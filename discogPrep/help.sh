@@ -40,6 +40,11 @@ Current Lookup Processing Cycle:
 	   The big difference is that the lookup is against the limited discogs dataset I have on local machine.
 
 
+Gereration of Discogs Genre and Style sets:
+    $ cat ALL_FLATDB | awk '{FS="::"} {print $6}' | sort -rn | uniq -c | sort -rn > discogs_defined_genres
+    $ cat ALL_FLATDB | awk '{FS="::"} {print $6 " " $7}' | sort -rn | uniq -c | sort -rn > discogs_defined_genres_styles
+    $ $ grep "::${genre_name}::" ALL_FLATDB | awk '{FS="::"} {print $6 " " $7}' | sort -rn | uniq -c | sort -rn > discogs_defined_${genre_name}_music_genres_styles  
+
 
 
 Find the Unique genres by country (what is the popular niche genere/sub-genre; NOTE: This will not work in the old flat-file dbase):
