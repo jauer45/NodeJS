@@ -25,6 +25,10 @@ fs.readFile('Indonesia_Admin.json', 'utf8', function(err, data) {
 	// console.log(obj.Indonesia.Region.keys);
 	console.log(obj.Indonesia.Region);
 
+	if( obj.Indonesia.Region.hasOwnProperty('City') )
+	{
+	console.log("\t\t HERE: " + obj.Indonesia.Region.City[0].length);;
+	}
 	
 	for ( var regn in obj.Indonesia.Region)
 	{
@@ -33,13 +37,15 @@ fs.readFile('Indonesia_Admin.json', 'utf8', function(err, data) {
 		
 		for ( var regattr in obj.Indonesia.Region[regn])
 		{
-			console.log("\t" + regattr + " " + obj.Indonesia.Region.reg);
+			console.log("\t" + regattr + " " + obj.Indonesia.Region);
+			// console.log("\t\t" + obj.Indonesia.Region.Music);
 		}
+	
 	
 		/*	
 		if (obj.Indonesia.Region[regn].length > 0)
 		{
-			for (var x in obj.Indonesia.Region[regn].regn )
+			for (var x in obj.Indonesia.Region[regn].regn[] )
 			{
 				console.log(x);	
 			}
@@ -57,6 +63,13 @@ fs.readFile('Indonesia_Admin.json', 'utf8', function(err, data) {
 	{
 		console.log(obj.Asia[0].South_Asia[i]);
 	}
+
+
+        for (var a=0; a < obj.Asia.length; a++)
+        {
+                console.log("Region: " + obj.Asia[a]);
+        }
+	
 	*/
 
 	// console.log(obj.identifiers.length);

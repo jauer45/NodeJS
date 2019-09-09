@@ -4,8 +4,8 @@ var Discogs = require('disconnect').Client;
 // than I thought despite the scale of the DB; a bit counter-intuitive and
 // a bit of a downer...
 //
-var START = 8028100; // 950100;
-var END =   8028200; // 950200;
+var START = 952000; // 950200;
+var END =   952100; // 950300;
 
 // 100 - 127100  (1996 - 2003; No entries for ROK, 10 for JP; None for other Asian countries)
 // 137000 - "100 (") -- around here 12 for Japan
@@ -37,6 +37,9 @@ var END =   8028200; // 950200;
 // 920000 - "300 (") -- still in 2007 mainly; FFWD a bit now...
 // 921000 - "500 (") -- Accelerate now as nothing really happening...
 // 950000 - 
+// 8028000 - 8031200 -- Again, nothing happening much here (up to 2016)
+// 8040000 - 8085000 -- Strange but other than Japan, no other ASEAN countries are having entries added, (currently the max year is 2017)
+// 9000000 - 
 
 // Much further on to around 2013 and I deccided to see again...
 // Would I find a more diverse db input per country or the mono-
@@ -56,6 +59,13 @@ var END =   8028200; // 950200;
 
 // 8000000 - ?
 
+/* 
+
+ Previous cmd exec usage (without styles and discog data id): $ node quikstart.js >> FLAT_LATERDB
+ New style cmd exec usage (with styles and discog data id): node quikstart.js >> FLAT_ADDSIDDB
+ (to run the old style script exec cmd usage: $ node quikstart-old.js >> FLAT_LATERDB)
+
+*/
 
 for (var i=START; i < END; i++)
 {
@@ -72,13 +82,18 @@ for (var i=START; i < END; i++)
 	//   console.log(data.community.submitter);
 	// }
 	// console.log(i);
+	// How to determine whether an object has a given property in JavaScript
+		// : if(data.hasOwnProperty('styles') { console.log()
 
-	if (data != null && data.genres != 'undefined' && data.released ) // && data.country == 'Japan')
+	if (data != null && data.hasOwnProperty('styles') && data.hasOwnProperty('genres') && data.genres != 'undefined' && data.styles != 'undefined' && data.released ) // && data.country == 'Japan')
 	{
-	   console.log(data.released + '::' + data.labels[0].name + '::' + data.artists[0].name + '::' + data.country + '::' + data.genres[0]);
+	   
+	   console.log(data.id + '::' + data.released + '::' + data.labels[0].name + '::' + data.artists[0].name + '::' + data.country + '::' + data.genres[0] + '::' + data.styles[0]); //Styles and id recording added: 19/08/2019
 	}
 
   });
+
+  // sleep 3; 
 
 }
 
