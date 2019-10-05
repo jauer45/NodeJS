@@ -1,0 +1,73 @@
+{
+   "Thailand":
+   {
+        "PostColonial":
+        {
+           "Bangkok":
+           {
+                "artist":
+                {
+		},
+
+		"group":
+		{
+		},
+
+                "label":
+                {
+                },
+
+                "club":
+                {
+                },
+
+                "event":
+                {
+                },
+
+                "promoter":
+                {
+                },
+
+                "academia":
+                {
+                }
+           }
+        },
+
+        "Millennial":
+        {
+            "Bangkok":
+            {
+                "artist":
+                {
+                },
+
+                "group":
+                {
+                },
+
+                "label":
+                {
+                },
+
+                "club":
+                {
+                },
+
+                "event":
+                {
+                },
+
+               "promoter":
+                {
+                },
+
+               "academia":
+               {
+                }
+
+            }
+        }
+   }
+}

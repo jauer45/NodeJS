@@ -12,6 +12,6 @@
     {"Australasia":[{"Australia":["Christmas Island","Cocos (Keeling) Islands","Heard Island and McDonald Islands","Norfolk Island"]}, "New Zealand"]},
     {"Melanesia":["Fiji","New Caledonia","Papua New Guinea","Solomon Islands","Vanuatu"]},
     {"Micronesia":[{"US":["Guam","Northern Mariana Islands"]},"Kiribati","Marshall Islands","Micronesia","Nauru","Palau"]},
-    {"Polynesia":[{"US":"American Samoa"},{"New Zealand":["Cook Islands","Niue","Tokelau"]},{"France":["French Polynesia","Wallis and Futuna"]},{"UK":["Pitcairn Islands"]},"Samoa","Tonga","Tuvalu"]}
+    {"Polynesia":[{"US":["American Samoa"]},{"New Zealand":["Cook Islands","Niue","Tokelau"]},{"France":["French Polynesia","Wallis and Futuna"]},{"UK":["Pitcairn Islands"]},"Samoa","Tonga","Tuvalu"]}
   ]
 }

@@ -1,0 +1,247 @@
+/* 
+Ethnic groups of Southeast Asia
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+
+The ethnic groups of Southeast Asia comprise many different linguistic stocks. Apart from Negrito, which is a physical description, they are here arranged according to the family their languages belong to. The Southeast Asian population stands at 641 million (2017).
+
+Contents
+1	Austro-Asiatic
+1.1	Vietic
+2	Austronesian
+3	Negrito peoples
+4	Sino-Tibetan
+4.1	Tibeto-Burman
+5	Kra-Dai
+6	Indo-Aryan and Dravidian
+6.1	Indo Aryan
+6.2	Indo-Aryan and Dravidian
+7	Arabian
+8	See also
+9	References
+
+*/
+
+{
+
+  "+ Austro-Asiatic" : 
+  {
+    "Mon people" : 
+    {
+      "Def" : "(Mon: မန္ or မည်; Burmese: မွန်လူမျိုး‌, pronounced [mʊ̀ɴ lù mjó]; Khmer: មន, Thai: มอญ, pronounced [mɔ̄ːn])", 
+      "Geo" : 
+      { 
+	"Myanmar" : [Mon State, Bago Region, Ayeyarwady Region(Irrawaddy Delta)]
+      }
+    },
+    "Palaung people" : 
+    {
+      "Def" : "(Burmese: ပလောင် လူမျိုး [pəlàʊɴ lùmjó]; Thai: ปะหล่อง, also written as Benglong Palong)",
+      "Geo" : 
+      { 
+	"Myanmar" : ["Shan State"],
+        "China" : ["Yunnan Province"],
+        "Thailand" : ["Chiang Mai", "Lamphun", "Lampang", "Uttaradit", "Phrae", "Nan", "Phayao", "Chiang Rai", "Mae Hong Son", "Nakhon Sawan", "Uthai Thani", "Khampaeng Phet", "Tak", "Sukhothai", "Phitsanulok", "Phichit", "Phetchabun"]
+      }
+    },
+   "Wa people" : 
+   {
+     "Def" : "(Wa language: Vāx; Burmese: ဝလူမျိုး [wa̰ lùmjóʊ]; Chinese: 佤族; pinyin: Wǎzú; Thai: ว้า)",
+     "Geo" : 
+     { 
+       "Myanmar" : ["Shan State", "Kachin State"],
+       "China" : ["Yunnan"]
+     }
+   },
+
+   Khmer people: (/kəˈmɛər, kəˈmaɪ/; Khmer: ជនជាតិខ្មែរ, Khmer pronunciation: [kʰmaːe], Northern Khmer pronunciation: [kʰmɛr]) => { Cambodia:{"Cambodia Diaspora":[US, France, South Korea, Australia, Canada, Malaysia]}; Vietnam; Laos; Thailand:[Suren Province, Buriram Province, Sisaket Province]}
+
+   Bahnar people: (also spelled Ba Na) => { Vietnam:[Bình Định Province, Phú Yên Province] }
+
+   Katuic peoples: => {Vietnam:"Truong Son"; Laos:{"South Eastern Laos":[]}}
+
+   Pear people: => {Cambodia:{"Northwestern Cambodia":"Preah Vihear Provinc"}}
+
+   Khmu people: (/kəˈmuː/; Khmu: /kmm̥uʔ/ or /kmmúʔ/; Lao: ຂະມຸ [kʰámūʔ]; Thai: ขมุ; Vietnamese: Khơ Mú; Chinese: 克木族; Burmese: ခမူ) => { Laos:"Northern Laos"; China:[Yunnan, Xishuangbanna]; Myanmar; Thailand, Vietnam, US} 
+
+   Nicobarese people: => {India:"Union Territory of the Andaman and Nicobar Islands("Nicobar Islands")"}
+
+   Senoi peoples:  (also spelled Sengoi and Sng'oi) => {Malaysia:"All regions (part of the Orang Asli peoples grouping)"}
+
+  Vietic
+   Vietnamese people: (Vietnamese: người Việt or người Kinh) => { Vietnam; US; Cambodia; France; Australia; Japan; Canada; Taiwan; South Korea; Germany; Laos; Malaysia; UK; Czech Republic; Poland; Russia; China; Philippines; Sweden; Norway; Netherlands; Thailand; Denmark; Switzerland; Qatar; Macau; Belgium; New Zealand; Finland; Ukraine; Hungary; Slovakia; Italy; Bulgaria; Brazil}
+
+   Muong people (Vietnamese: người Mường) => { Vietnam:[Hòa Bình Province, Thanh Hóa Province]}
+
+   Thổ people (also Keo, Mon, Cuoi, Ho, Tay Poong) => { Vietnam:"Nghệ An Province" }
+
+   Chut people => { Laos; Vietname:{"Quảng Bình Province":[Minh Hóa District, Tuyên Hóa District]}}
+
+
+
++ Austronesian (Further information: Austronesian peoples)
+   Javanese people: (Javanese: Ngoko: ꦮꦺꦴꦁꦗꦮ (Wong Jawa), Krama: ꦠꦶꦪꦁꦗꦮꦶ (Tiyang Jawi) => { Indonesia; Saudi Arabia; Malaysia; Taiwan; Hong Kong; Singapore; United Arab Emirites; Suriname; Jordan; Oman; Qatar; Netherlands; Macau; Australia; New Caladonia; French Guiana; Germany }
+
+     Osing people: 
+
+     Tenggerese:  (Ngoko Javanese: ꦮꦺꦴꦁꦡꦼꦁꦒꦼꦂ,[4] Madya Javanese: ꦠꦶꦪꦁꦡꦼꦁꦒꦼꦂ,[5] Krama Javanese: ꦥꦿꦶꦪꦤ꧀ꦠꦸꦤ꧀ꦡꦼꦁꦒꦼꦂ,[6] Ngoko Gêdrìk: wòng Tĕnggĕr, Madya Gêdrìk: tiyang Tĕnggĕr, Krama Gêdrìk: priyantun Tĕnggĕr, Indonesian: suku Tengger) => { Indonesia:{"East Java":[Bromo Tengger Semeru National Park, Pasuruan, Probolinggo Regency, Malang Regency, Lumajang Regency]}}
+
+     Mataram: "Not Sure about this as the reference is to an Kingdom not a ethnic sub-group"
+
+     Cirebonese: {Indonesia:"West Java"}
+
+     Samin: {Indonesia:{"Saminism Movement*":[North Java, Central Java]}}
+
+     Naganese: {Similar situation as Matram - centred around a (remote) village}
+
+     Banyumasan: (Ngoko Javanese: ꦮꦺꦴꦁꦨꦚꦸꦩꦱꦤ꧀,[3] Madya Javanese: ꦠꦶꦪꦁꦡꦺꦴꦪꦗꦼꦤꦺꦲꦤ꧀,[4] Krama Javanese: ꦥꦿꦶꦪꦤ꧀ꦠꦸꦤ꧀ꦡꦺꦴꦪꦗꦼꦤꦺꦲꦤ꧀,[5] Ngoko Gêdrìk: wòng Banyumasan,[6] Madya Gêdrìk: tiyang Toyåjênéan, Krama Gêdrìk: priyantun Toyåjênéan, Indonesian: suku Banyumasan) => {Indonesia:{"Central Java":[Banyumas Regency, Majenang Regency, Cilacap Regency, Gombong Regency, Kebumen Regency, Banjarnegara Regency, Purbalingga Regency, Purwokerto Regency, Bumiayu Regency, Slawi Regency, Pemalang Regency, Tegal Regency, Brebes Regency]}}
+
+   Sundanese people: (Sundanese: ᮅᮛᮀ ᮞᮥᮔ᮪ᮓ, Urang Sunda) => {Indonesia:[West Java, Central Java, South Sumatra, Jakarta, Lampung, Banten]} 
+
+     Baduy: => {Indonesia:[Banten Province]}
+
+     Kasepuhan (Kasepuhan Banten Kidul) => {Indonesia:{"West Java":{"Gunung Halimun National Park":[Sukabumi Regency, Bogor City, Banten Province]}}}
+
+   Malay people: (Malay: Orang Melayu, Jawi: أورڠ ملايو) => {Malaysia; Brunei; Indonesia; Thailand; Malay Diaspora; Singapore; South Africa; Saudi Arabia; Sri Lanka; Australia; UK; US; Myanmar; Canada}
+
+   Minangkabau people: (Minangkabau: Urang Minang) => {Malaysia:"Negeri Sembilan"; Indonesia:"West Sumatra"; Singapore; Netherlands}
+
+   Madurese people: (sometimes Madurace or Madhure; also known as Orang Madura and Suku Madura in Indonesian) => {Indonesia:[East Java, West Java, Central Java, West Kalimantan, Jakarta, Bali, South Kalimantan, Central Kalimantan, East Kalimantan, Bangka Beitung]}
+
+   Batak people: => {Indonesia:["North Sumatra", Riau, "West Java", Jakarta, "Riau Islands", Aceh, Banten, Jambi]; Malaysia; US; Netherlands; Singapore; Brunei}
+
+   Balinese people: (Indonesian: Suku Bali) => {Indonesia:[Bali, West Nusa Tenggara, Central Sulawesi, Lampung, Southeast Sulawesi, South Sumatera, South Sulawesi]; Malaysia; Australia; US}
+
+   Sasak people: => {Indonesia:{"West Nusa Tenggara":"Lombok(Island)"}}
+
+   Sumbawa people: => {Indonesia:{"Sumbawa Island":[West Sumbawa Regency, Sumbawa Regency]}}
+
+   Banjar people: (Urang Banjar in Banjarese language; اورڠ بنجر in Jawi script) => {Indonesia:[South Kalimantan, Central Kalimantan, East Kalimantan, Riau, North Sumatera, Jambi, West Kalimantan, East Java, West Java, Jakarta, Riau Islands]; Malaysia; Singapore}
+
+   Buginese people:
+     Makassar People:
+     Toraja:
+   Mandarese People:
+   Minahasan People:
+   Acehnese people
+   Bantenese
+   Dayak people
+     Iban people
+   Lun Bawang/Lundayeh
+   Kadazan
+   Murut people
+   Cham people
+   Jarai people
+   Filipino people
+     Bicolano people
+     Gaddang people
+     Ilocano people
+     Ibanag people
+     Igorot peoples
+       Bontoc
+       Ibaloi people
+       Ifugao people
+       Isneg people
+       Kalinga people
+       Kankana-ey
+       Tingguian
+     Ilongot people
+     Itawis
+     Ivatan people
+     Kapampangan people
+     Lumad peoples
+       B'laan people
+       Bagobo
+       Mandaya
+       Manobo
+       Mansaka
+       Matigsalug
+       Subanon people
+       T'boli people
+     Mangyan peoples
+       Alangan
+       Tadyawan
+     Moro people
+       Maguindanao people
+       Maranao people
+       Sama people
+       Tausūg people
+       Yakan people
+     Pangasinan people
+     Sambal people
+     Tagalog people
+     Visayans
+       Aklanon people
+       Butuanon people
+       Cebuano people
+       Hiligaynon people
+       Surigaonon people
+       Waray people
+
+
+
++ Negrito peoples (Further information: Negrito and Proto-Australoid)
+   Aeta people
+   Andamanese
+   Ati people
+   Mamanwa
+   Mani
+   Orang Asli
+   Semang
+
+
+
++ Sino-Tibetan
+
+Tibeto-Burman
+ Bamar people
+ Karen people
+ Rakhine people
+  Kamein
+ Karenni people
+ Kachin people
+ Zo people
+  Chin people
+  Mizo people
+  Kuki people
+ Naga people
+
+Kra-Dai
+ Further information: Kra-Dai-speaking peoples
+ Thai people
+ Lao people
+ Kadai peoples
+ Kam–Sui peoples
+ Tay people
+ Saek people
+ Nung people
+ Nyaw people
+ Lu people
+ Kongsat
+ White Tai
+ Shan people
+
+
+
++ Indo-Aryan and Dravidian
+
+Indo Aryan
+ Rohingya people
+
+Indo-Aryan and Dravidian
+ Burmese Indians
+ Indians in Brunei
+ Indian Indonesians
+ Indian settlement in the Philippines
+ Indians in Thailand
+ Malaysian Indian
+ Singapore Indian
+ Sri Lankans in Malaysia
+
+Arabian
+ Indonesian Arab
+ Arab Singaporean
+ Arab Malaysian
+ Arab Filipinos
+ Hadhrami people
+
