@@ -78,7 +78,9 @@ fs.readFile('APAC.json', 'utf8', function(err, data) {
 	// Oceania
 	 for (var i=0; i < obj.Oceania[0].Australasia.length; i++)
         {
-                console.log("Australia");
+		if ( i == 0 ) { console.log("Australia") }
+		if ( i == 1 ) { console.log("New Zealand")}
+
 		// Length
 		if( obj.Oceania[0].Australasia[i].Australia )
 		{
@@ -97,12 +99,50 @@ fs.readFile('APAC.json', 'utf8', function(err, data) {
 
         for (var k=0; k < obj.Oceania[2].Micronesia.length; k++)
         {
-                // console.log(obj.Oceania[2].Micronesia[k]);
+		if ( k == 0 ) 
+		{ 
+		  for(var x=0; x < obj.Oceania[2].Micronesia[k].US.length; x++ )
+                  {
+                    console.log(obj.Oceania[2].Micronesia[k].US[x]);
+                  }	
+		}		
+		else { console.log(obj.Oceania[2].Micronesia[k]); }
         }
 
         for (var l=0; l < obj.Oceania[3].Polynesia.length ; l++)
         {
-                // console.log(obj.Oceania[3].Polynesia[l]);
+		if ( l == 0 ) 
+		{ 
+		  for(var x=0; x < obj.Oceania[3].Polynesia[l].US.length; x++ )
+                  {
+                    console.log(obj.Oceania[3].Polynesia[l].US[x]);
+                  } 
+		}
+		else if( l == 1 ) 
+		{
+			/*
+		  console.log("NZ-Territory")
+		  for(var x=0; x < obj.Oceania[3].Polynesia[l]."New Zealand".length; x++ )
+                  {
+                    console.log(obj.Oceania[3].Polynesia[l]."New Zealand"[x]);
+                  } 
+			*/
+		}
+		else if( l == 2 ) 
+		{ 
+		  for(var x=0; x < obj.Oceania[3].Polynesia[l].France.length; x++ )
+                  {
+                    console.log(obj.Oceania[3].Polynesia[l].France[x]);
+                  }
+		}
+		else if( l == 3 ) 
+		{  
+		  for(var x=0; x < obj.Oceania[3].Polynesia[l].UK.length; x++ )
+                  {
+                    console.log(obj.Oceania[3].Polynesia[l].UK[x]);
+                  }
+		}
+                else { console.log(obj.Oceania[3].Polynesia[l]); }
         }
 
 	

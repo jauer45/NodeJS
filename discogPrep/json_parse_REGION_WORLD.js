@@ -50,6 +50,18 @@ function rf (fl)
 		for (var i = 0; i < obj[key].length; i++)
 		{
 			console.log(obj[key][i]);
+			console.log("Region Divisions: " + obj[key][i]);
+
+			for ( var keysub in obj[key][i] )
+			{
+				console.log("Region Division: " + keysub);
+				
+				for (var j = 0; j < obj[key][i][keysub].length; j++)
+				{
+				//	console.log(obj[keysub][i]);
+				}
+				
+			}
 		} 
 	}
 
