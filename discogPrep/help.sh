@@ -40,6 +40,20 @@ Current Lookup Processing Cycle:
 	   The big difference is that the lookup is against the limited discogs dataset I have on local machine.
 
 
+
+
+Currently running to redo the dbase:
+    $ for x in {3721..10000}; do node quikstart-shellexec.js ${x} >> FLAT_REDO ; sleep 2; done;
+
+Cleaning up the FLAT_REDO file (remove entries where request trouble issues with no data):
+    $ cat FLAT_REDO | grep "::" >> FLAT_REDO_F; sleep 1; mv FLAT_REDO_F FLAT_REDO;
+    $ rm TMP_FLAT; cp -p FLAT_REDO TMP_FLAT; cat FLAT_ADDSIDDB >> TMP_FLAT 
+
+
+Generation of Discog entries by genre for countries in file:
+    $ for x in [ 'Electronic' 'Pop' 'Hip Hop' ]; do grep "::${x}" FLAT_ADDSIDDB | awk '{FS="::"} {print $3 " " $5 " " $6}' | sort -rn | uniq -c | sort -rn >> discogs_genre_record_labels_by_country ; done;
+
+
 Gereration of Discogs Genre and Style sets:
     $ cat ALL_FLATDB | awk '{FS="::"} {print $6}' | sort -rn | uniq -c | sort -rn > discogs_defined_genres
     $ cat ALL_FLATDB | awk '{FS="::"} {print $6 " " $7}' | sort -rn | uniq -c | sort -rn > discogs_defined_genres_styles
@@ -154,6 +168,27 @@ Finding a Popular genre and sub-genere under the flat file with ALL discogs URI 
    >>  63 Electronic Industrial
    >>  55 Electronic Alternative Rock
 
+
+Doing the Above Another Way (Still needs cleaning-up):
+
+   CMD (get genres):
+   cat ALL_FLATDB | awk '{FS="::"} {print $6}' | sort -rn | uniq -c | sort -rn | sed -e "s/ /\_/g" > TMP_GENRES; sleep 1; for x in `cat TMP_GENRES | sed -e "s/\_*[0-9*]*\_//" | awk '{FS=" "} {print $1}'`; do echo ${x}; i=`echo ${x} | sed -e "s/\_/ /g"`; grep "::${i}::" TMP_FLAT | awk '{FS="::"} {print $3 " " $5 " " $7}' | sort -rn | uniq -c | sort -rn | head -5 ; done;
+
+   CMD (get sub-genres of genre):
+   $ grep '::Electronic::' TMP_FLAT | awk '{FS="::"} {print $7}' | sort -rn | uniq -c | sort -rn | head -20 | sed -e "s/ /\_/g" > TMP_SGENRES; sleep 1; for x in `cat TMP_SGENRES | sed -e "s/\_*[0-9*]*\_//" | awk '{FS=" "} {print $1}'`; do echo ${x}; i=`echo ${x} | sed -e "s/\_/ /g"` ; grep "Electronic::${i}" TMP_FLAT | awk '{FS="::"} {print $3 " " $5 " " $7}' | sort -rn | uniq -c | sort -rn | head -10 ; done;
+
+   FLAT FILE (adding new record search limit filter ${h}=1000):
+   $ h=1000; grep '::Electronic::' TMP_FLAT | head -${h} | awk '{FS="::"} {print $7}' | sort -rn | uniq -c | sort -rn | head -30 | sed -e "s/ /\_/g" > TMP_SGENRES; sleep 1; for x in `cat TMP_SGENRES | sed -e "s/\_*[0-9*]*\_//" | awk '{FS=" "} {print $1}'`; do echo ${x}; i=`echo ${x} | sed -e "s/\_/ /g"` ; echo ${i} >> discogs_deep_dive; grep "Electronic::${i}" TMP_FLAT | head -${h} | awk '{FS="::"} {print "\t" $3 " " $5 " " $7}' | sort -rn | uniq -c | sort -rn | head -10 >> discogs_deep_dive; printf "\n" >> discogs_deep_dive; done;
+
+	Check against query: $ i="IDM"; h=10000; grep "Electronic::${i}" TMP_FLAT | head -${h} | awk '{FS="::"} {print "\t" $3 " " $5 " " $7}' | sort -rn | uniq -c | sort -rn | head -40 
+
+
+	(Only issue outstanding is where a Genre mimics a sub-genre (or a sub-genre mimics a sub-sub/micro genre [which follows the same pattern anyhow]: Ex. -> Dub = [Dub, Dub Techno] where we only want Dub OR Dub Techno not Dub AND Dub Techno)
+
+
+Re-ordering the FLAT_ADD.. file so that we can do sequential yearly ordering analysis for the above:
+
+   $ for x in `cat FLAT_ADDSIDDB | awk '{FS="::"} {print $1}' | sort -n`; do grep "${x}" FLAT_ADDSIDDB >> FLAT_ADDSIDDB_N; done;
 
 
 
@@ -334,4 +369,6 @@ Generate new artist file in directory ./ARTIST/:
 
    4. Fully Integrated Solution:
 
-		
+	Country -> Region -> Province/District/State/Special Area/ -> City -> City district 
+
+	Genre -> Sub-Genre
