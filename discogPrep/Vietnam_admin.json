@@ -1,0 +1,99 @@
+{
+  "Thailand":
+  {
+     "Region":
+     {
+	"Northwest":{
+		"Province":{
+			"Điện Biên":["Điện Biên Phủ city※","Mường Lay town","Điện Biên","Điện Biên Đông","Mường Ảng","Mường Chà","Mường Nhé","Nậm Pồ","Tủa Chùa","Tuần Giáo"],
+			"Hòa Bình":["Hòa Bình city※" "Cao Phong" "Đà Bắc" "Kim Bôi" "Kỳ Sơn" "Lạc Sơn" "Lạc Thủy" "Lương Sơn" "Mai Châu" "Tân Lạc" "Yên Thủy"],
+			"Lai Châu":["Lai Châu city※" "Mường Tè" "Nậm Nhùn" "Phong Thổ" "Sìn Hồ" "Tam Đường" "Tân Uyên" "Than Uyên"],
+			"Lào Cai":["Lào Cai city※" Bắc Hà Bảo Thắng Bảo Yên Bát Xát Mường Khương Sa Pa Si Ma Cai Văn Bàn"], 
+			"Sơn La":["Sơn La city※" "Bắc Yên" "Mai Sơn" "Mộc Châu" "Mường La" "Phù Yên" "Quỳnh Nhai" "Sông Mã" "Sốp Cộp" "Thuận Châu" "Vân Hồ" "Yên Châu"],
+			"Yên Bái":["Yên Bái city※" "Nghĩa Lộ town" "Lục Yên" "Mù Cang Chải" "Trạm Tấu" "Trấn Yên" "Văn Chấn" "Văn Yên" "Yên Bình"]
+		},
+		"Music":[]
+	}, 
+	"Northeast":{
+		"Province":{
+			"Bắc Giang Province":[
+Bắc Giang city※ Hiệp Hòa Lạng Giang Lục Nam Lục Ngạn Sơn Động Tân Yên Việt Yên Yên Dũng Yên Thế
+			"Bắc Kạn Province":[
+Bắc Kạn city※ Ba Bể Bạch Thông Chợ Đồn Chợ Mới Na Rì Ngân Sơn Pác Nặm
+			"Cao Bằng Province":[
+Cao Bằng city※ Bảo Lạc Bảo Lâm Hạ Lang Hà Quảng Hòa An Nguyên Bình Phục Hòa Quảng Uyên Thạch An Thông Nông Trà Lĩnh Trùng Khánh
+			"Hà Giang Province":[
+Hà Giang city※ Bắc Mê Bắc Quang Đồng Văn Hoàng Su Phì Mèo Vạc Quản Bạ Quang Bình Vị Xuyên Xín Mần Yên Minh
+			"Lạng Sơn Province":[
+Lạng Sơn city※ Bắc Sơn Bình Gia Cao Lộc Chi Lăng Đình Lập Hữu Lũng Lộc Bình Tràng Định Văn Lãng Văn Quan
+			"Phú Thọ Province":[
+Việt Trì city※ Phú Thọ town Cẩm Khê Đoan Hùng Hạ Hòa Lâm Thao Phù Ninh Tam Nông Tân Sơn Thanh Ba Thanh Sơn Thanh Thủy Yên Lập
+			"Quảng Ninh Province":[
+Cẩm Phả city Hạ Long city※ Móng Cái city Uông Bí city Quảng Yên town Đông Triều town Ba Chẽ Bình Liêu Cô Tô Island Đầm Hà Hải Hà Hoành Bồ Tiên Yên Vân Đồn Island
+			"Thái Nguyên Province	
+Sông Công city Thái Nguyên city※ Phổ Yên town Đại Từ Định Hóa Đồng Hỷ Phú Bình Phú Lương Võ Nhai
+			"Tuyên Quang Province":[
+Tuyên Quang city※ Chiêm Hoá Hàm Yên Lâm Bình Na Hang Sơn Dương Yên Sơn
+		}
+	},
+	"Red River Delta":{
+		"Province":{
+			"Hanoi city":[
+Urban districts Ba Đình Bắc Từ Liêm Cầu Giấy Đống Đa Hà Đông Hai Bà Trưng Hoàn Kiếm※ Hoàng Mai Long Biên Nam Từ Liêm Tây Hồ Thanh Xuân
+Sơn Tây town Ba Vì Chương Mỹ Đan Phượng Đông Anh Gia Lâm Hoài Đức Mê Linh Mỹ Đức Phú Xuyên Phúc Thọ Quốc Oai Sóc Sơn Thanh Oai Thạch Thất Thanh Trì Thường Tín Ứng Hòa
+			"Haiphong city":[
+Urban districts Đồ Sơn Dương Kinh Hải An Kiến An Hồng Bàng※ Lê Chân Ngô Quyền
+An Dương An Lão Bạch Long Vĩ Island Cát Hải Island Kiến Thụy Tiên Lãng Vĩnh Bảo Thủy Nguyên
+			"Bắc Ninh Province":[
+Bắc Ninh city※ Từ Sơn town Gia Bình Lương Tài Quế Võ Thuận Thành Tiên Du Yên Phong
+			"Hà Nam Province":[	
+Phủ Lý city※ Bình Lục Duy Tiên Kim Bảng Lý Nhân Thanh Liêm
+			"Hải Dương Province":[
+Chí Linh city Hải Dương city※ Bình Giang Cẩm Giàng Gia Lộc Kim Thành Kinh Môn Nam Sách Ninh Giang Thanh Hà Thanh Miện Tứ Kỳ
+			"Hưng Yên Province":[
+Hưng Yên city※ Mỹ Hào town Ân Thi Khoái Châu Kim Động Phù Cừ Tiên Lữ Văn Giang Văn Lâm Yên Mỹ
+			"Nam Định Province":[
+Nam Định city※ Giao Thủy Hải Hậu Mỹ Lộc Nam Trực Nghĩa Hưng Trực Ninh Vụ Bản Xuân Trường Ý Yên
+			"Ninh Bình Province":[
+Ninh Bình city※ Tam Diep city Gia Viễn Hoa Lư Kim Sơn Nho Quan Yên Khánh Yên Mô
+			"Thái Bình Province":[
+Thái Bình city※ Đông Hưng Hưng Hà Kiến Xương Quỳnh Phụ Thái Thụy Tiền Hải Vũ Thư
+			"Vĩnh Phúc Province":[
+Phúc Yên city Vĩnh Yên city※ Bình Xuyên Lập Thạch Sông Lô Tam Đảo Tam Dương Vĩnh Tường Yên Lạc
+		}
+	}, 
+	"North Central Coast":{
+		"":{
+			"Hà Tĩnh Province":[
+Hà Tĩnh city※ Hồng Lĩnh town Kỳ Anh town Cẩm Xuyên Can Lộc Đức Thọ Hương Khê Hương Sơn Kỳ Anh Lộc Hà Nghi Xuân Thạch Hà Vũ Quang
+			"Nghệ An Province":[
+Vinh city※ Cửa Lò town Hoàng Mai town Thái Hòa town Anh Sơn Con Cuông Diễn Châu Đô Lương Hưng Nguyên Kỳ Sơn Nam Đàn Nghi Lộc Nghĩa Đàn Quế Phong Quỳ Châu Quỳ Hợp Quỳnh Lưu Tân Kỳ Thanh Chương Tương Dương Yên Thành
+			"Quảng Bình Province":[
+Đồng Hới city※ Ba Đồn town Bố Trạch Lệ Thủy Minh Hóa Quảng Ninh Quảng Trạch Tuyên Hóa
+			"Quảng Trị Province":[
+Đông Hà city※ Quảng Trị town Cam Lộ Cồn Cỏ Island Đa Krông Gio Linh Hải Lăng Hướng Hóa Triệu Phong Vĩnh Linh
+			"Thanh Hóa Province":[Thanh Hóa city※ Sầm Sơn city Bỉm Sơn town Bá Thước Cẩm Thủy Đông Sơn Hà Trung Hậu Lộc Hoằng Hóa Lang Chánh Mường Lát Nga Sơn Ngọc Lặc Như Thanh Như Xuân Nông Cống Quan Hóa Quan Sơn Quảng Xương Thạch Thành Thiệu Hóa Thọ Xuân Thường Xuân Tĩnh Gia Triệu Sơn Vĩnh Lộc Yên Định"],
+			"Thừa Thiên-Huế Province":["Huế city※","Huong Thuy town" "Hương Trà town A" "Lưới" "Nam Đông" "Phong Điền" "Phú Lộc" "Phú Vang" "Quảng Điền"]
+		}
+	}, 
+	"South Central Coast":{
+	},
+	"Central Highlands":{
+	}, 
+	"Southeast":{
+	}, 
+	"Mekong Delta":{
+	}
+
+     },
+
+     "Municipality":
+     {
+	"Cần Thơ":[],
+	"Đà Nẵng":[],
+	"Hải Phòng":[], 
+	"Hà Nội":[], 
+	"Hồ Chí Minh City":[]
+     }
+  }
+}
